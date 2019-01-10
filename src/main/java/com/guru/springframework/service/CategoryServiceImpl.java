@@ -1,12 +1,16 @@
 package com.guru.springframework.service;
 
 import java.util.List;
+
 import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
 
 import com.guru.springframework.api.v1.model.CategoryDTO;
 import com.guru.springframework.api.v1.mapper.CategoryMapper;
 import com.guru.springframework.repositories.CategoryRepository;
 
+@Service
 public class CategoryServiceImpl implements CategoryService {
 	
 	private final CategoryMapper categoryMapper;

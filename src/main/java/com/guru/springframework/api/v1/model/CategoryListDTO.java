@@ -1,11 +1,7 @@
 package com.guru.springframework.api.v1.model;
 
 import lombok.*;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.util.List;
 
 /**
  * Created by ab on 01/10/18.
@@ -13,5 +9,6 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 public class CategoryListDTO {
+	List<CategoryDTO> categories;
 
 }
